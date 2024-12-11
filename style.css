@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+
+
+
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
@@ -6,15 +11,13 @@
     --border:.1rem solid rgba(255,255,255,.3)
 
 }
-*{
-    font-family: 'Roboto' , sans-serif;
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 2s linear;
 
+*{
+    font-family: 'Comfortaa', cursive;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none
 }
 html{
     font-size: 62.5%;
@@ -49,6 +52,7 @@ section{
     color:var(--main-color);
     text-transform: uppercase;
 }
+/*
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -59,6 +63,25 @@ section{
     cursor: pointer;
 
 }
+.btn:hover{
+    letter-spacing: .2rem;
+}*/
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
 .btn:hover{
     letter-spacing: .2rem;
 }
@@ -97,7 +120,7 @@ section{
 }
 #menu-btn{
     display: none;
-}/*
+}
 .header .search-form{
     position: absolute;
     top:115%; right: 7%;
@@ -106,8 +129,8 @@ section{
     height: 5rem;
     display: flex;
     align-items: center;
+    transform-origin: top;
     transform: scaleY(0);
-    transform-origin: top ;
 }
 .header .search-form input{
     height: 100%;
@@ -115,13 +138,18 @@ section{
     font-size: 1.6rem;
     color:var(--black);
     padding: 1rem;
+    text-transform: none;
+  
+
 }
+
 .header .search-form label{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
     color:var(--black);
 }
+
 .header .search-form label:hover{
     color:var(--main-color);
 }
@@ -133,6 +161,7 @@ section{
     background: #fff;
     padding: 0 1.5rem;
 }
+/*
 .header .cart-items-container .cart-item{
     position: relative;
     margin: 2rem 0;
@@ -164,16 +193,16 @@ section{
     color: var(--black);
     
     
-}
+}*/
 
 
-*/
+
 
 .home{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(b.png) no-repeat;
+    background:url(b.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -186,13 +215,7 @@ section{
     text-transform: uppercase;
     color: #fff;
 }
-.home .content p{
-    font-size: 3rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem;
-    color: #fff;
-}
+
 .about .row{
     display: flex;
     align-items: center;
@@ -201,13 +224,13 @@ section{
 
 }
 .about .row .image{
-    flex:1 1 45rem;
+    flex:1 1 50rem;
 }
 .about .row .image img {
     width: 100%;
 }
 .about .row .content{
-    flex:1 1 45 rem;
+    flex:1 1 45rem;
     padding: 2rem;
 }
 .about .row .content h3{
@@ -215,8 +238,8 @@ section{
     color: #fff;
 }
 .about .row .content p{
-    font-size: 3rem;
-    color: #eee;
+    font-size: 1.6rem;
+    color: #ccc;
     padding:1rem 0;
     line-height: 1.8;
 }
@@ -250,6 +273,9 @@ section{
 }
 .menu .box-container .box:hover{
     background: #fff;
+}
+.menu .box-container .box:hover > *{
+    color:var(--black);
 }
 .products .box-container{
     display: grid;
@@ -299,3 +325,142 @@ padding: 2rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
+body,button,span{
+    font-family: "Work Sans", sans-serif;
+}
+.chou,.btnlogin,h2 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    column-gap: 30px;
+
+
+}
+.form{
+    position:absolute;
+    background: #FFF;
+    max-width:430px;
+    border-radius: 6px;
+    width:100% ;
+    padding:30px;
+
+}
+form{
+    margin-top: 30px;
+
+}
+.form .field{
+    position: relative;
+    height:50px;
+    width: 100% ;
+    margin-top: 20px;
+    border-radius: 6px;
+
+
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border:none;
+    font-size:16px;
+    font-weight:400 ;
+    border-radius: 6px;
+}
+
+.field input{
+    outline:none;
+    border :1px solid#CACACA;
+    padding:0 15px;
+    
+}
+.field input:focus{
+    border: 1px solid gray; /* Une bordure par défaut */
+    border-bottom-width: 1px; /* Bordure inférieure initiale */
+    outline: none; /* Supprimer le contour bleu par défaut du navigateur */
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+
+}
+.form-link span,
+.form-link a{
+    font-size:14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a{
+    text-decoration: none;
+    color:#0171d3;
+    
+}
+.field.input-field .forgot-pass {
+    text-align: center; /* Centre le texte */
+    display: block; /* Nécessaire pour que le centrage fonctionne */
+    margin-top: 10px; /* Optionnel : Ajoute un espace au-dessus si nécessaire */
+}
+
+
+form a:hover{
+    text-decoration: underline;
+}
+.eye-icon,.mail-icon,.user-icon{
+    font-size:18px;
+    color:#8b8b8b;
+    position:absolute;
+    top:35%;
+    right:5%;
+    cursor: pointer;
+    
+    
+
+}
+.locked{
+    font-size:20px;
+    color:#8b8b8b;
+    position:absolute;
+    top:35%;
+    right:6.7%;
+    cursor: pointer;
+    
+}
+
+.field button{
+    background-color: #d3ad7f;
+    color:black;
+    transition: all 0.3s ease;
+    cursor:pointer;
+    
+}
+.field button :hover{
+    background-color: #d3ad7f; 
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .yassimg{
+    flex:1 1 45rem;
+    width: 100%;
+}
+
